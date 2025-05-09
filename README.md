@@ -1,6 +1,7 @@
 Budget Tracker Application
 
 Overview
+
 The Budget Tracker application is a web-based financial management tool developed using the Java Spring Boot framework. It is designed to help users manage and track their income and expenses by creating multiple profiles for each individual or household. 
 
 The application allows users to:
