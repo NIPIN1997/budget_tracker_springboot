@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("/images/home_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #2a68f7;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 5px;
+	z-index: 1;
+}
+
+#profiles {
+	position: relative;
+	top: 200px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.profile {
+	height: 150px;
+	width: 150px;
+	border-radius: 75px;
+	background-color: #2a68f7;
+	color: white;
+	opacity: 0.95;
+	align-content: center;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.profile:hover {
+	height: 160px;
+	width: 160px;
+	border-radius: 80px;
+	opacity: 1;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	height: 20px;
+	background-color: #2a68f7;
+	width: 100%;
+}

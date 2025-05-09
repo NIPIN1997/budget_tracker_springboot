@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("/images/error_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #2a68f7;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 5px;
+	z-index: 1;
+}
+
+#error {
+	position: relative;
+	top: 200px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	color: black;
+	opacity: 0.8;
+	text-align: center;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+#error h3 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#error p {
+	font-size: 20px;
+}
+
+#error a {
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	height: 20px;
+	background-color: #2a68f7;
+	width: 100%;
+}

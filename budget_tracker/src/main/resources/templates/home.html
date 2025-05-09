@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Budget Tracker</title>
+<link rel="stylesheet" href="/css/home.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div id="header">
+		<h1>Budget Tracker</h1>
+	</div>
+	<div id="profiles">
+		<div th:each="profile:${profiles}">
+			<a th:href="@{/get-budget/{id}(id=${profile.id})}"
+				style="text-decoration: none; color: inherit;">
+				<div class="profile">
+					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+						fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+					  <path
+							d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+					</svg>
+					<br> <span th:text="${profile.name}"></span>
+				</div>
+			</a>
+		</div>
+		<div class="profile"
+			th:onclick="'window.location.href=\'/add-profile\''">
+			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+				fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+			  <path fill-rule="evenodd"
+					d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+			</svg>
+			<br> Add
+		</div>
+	</div>
+	<div id="footer"></div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+		crossorigin="anonymous"></script>
+</body>
+</html>

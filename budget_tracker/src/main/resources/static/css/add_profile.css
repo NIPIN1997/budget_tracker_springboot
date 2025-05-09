@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("/images/profile_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #2a68f7;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 5px;
+	z-index: 1;
+}
+
+#form {
+	position: relative;
+	top: 150px;
+	width: 50%;
+	background-color: #2a68f7;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	color: white;
+	opacity: 1;
+}
+
+#form h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+#form label {
+	font-size: 20px;
+}
+
+#form button {
+	width: 100px;
+	color: #2a68f7;
+	font-weight: bold;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	height: 20px;
+	background-color: #2a68f7;
+	width: 100%;
+}

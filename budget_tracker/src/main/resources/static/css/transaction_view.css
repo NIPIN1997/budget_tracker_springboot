@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url("/images/dashboard_background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#header {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #2a68f7;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 5px;
+	z-index: 1;
+}
+
+#navigationBar {
+	position: fixed;
+	top: 64px;
+	width: 100%;
+	z-index: 1;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	height: 20px;
+	background-color: #2a68f7;
+	width: 100%;
+}
+
+#mainDiv {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 150px;
+	background-color: white;
+	border: 3px solid #2a68f7;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#headingDiv {
+	width: 100%;
+}
+
+#headingDiv h3 {
+	text-align: center;
+	color: #2a68f7;
+	font-weight: bold;
+}
+
+#tableDiv {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	height: 250px;
+}
+
+#paginationDiv {
+	margin-top: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#downloadButtonDiv{
+	display:flex;
+	justify-content: flex-end;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#downloadButtonDiv button{
+	background-color: #2a68f7;
+	color:white;
+}
